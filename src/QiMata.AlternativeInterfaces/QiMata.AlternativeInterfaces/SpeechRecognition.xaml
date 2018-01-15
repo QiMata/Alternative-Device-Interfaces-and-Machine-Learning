@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QiMata.AlternativeInterfaces.SpeechRecognition"
+             Title="Speech Recognition">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label x:Name="IsRecordingLabel" Text="Not Recording"
+                   VerticalOptions="StartAndExpand" 
+                   HorizontalOptions="CenterAndExpand"></Label>
+            <Button Text="Create My Profile"
+                    VerticalOptions="EndAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                    Released="Create_Profile_Button_OnReleased"/>
+            <Button Text="Recognize my Speech"
+                VerticalOptions="EndAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+               Released="Recognize_Button_OnReleased"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
