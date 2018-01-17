@@ -1,19 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.ProjectOxford.SpeakerRecognition.Contract;
 using Microsoft.ProjectOxford.SpeakerRecognition.Contract.Identification;
 using Plugin.AudioRecorder;
-//using Plugin.MediaManager;
 using QiMata.AlternativeInterfaces.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+//using Plugin.MediaManager;
 
-namespace QiMata.AlternativeInterfaces
+namespace QiMata.AlternativeInterfaces.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SpeechRecognition : ContentPage

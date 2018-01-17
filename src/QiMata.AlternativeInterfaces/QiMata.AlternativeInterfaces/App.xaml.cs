@@ -13,7 +13,7 @@ namespace QiMata.AlternativeInterfaces
 		{
 			InitializeComponent();
 
-			MainPage = new QiMata.AlternativeInterfaces.MainPage();
+			MainPage = new Views.MainPage();
 		}
 
 		protected override void OnStart ()

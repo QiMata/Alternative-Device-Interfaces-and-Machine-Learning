@@ -7,6 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.ProjectOxford.SpeakerRecognition" Version="1.2.0" />
     <PackageReference Include="Plugin.AudioRecorder" Version="0.8.0" />
+    <PackageReference Include="Xam.Plugin.Media" Version="3.1.2" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
   </ItemGroup>
 
@@ -14,12 +15,8 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\MainPage.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\" />
   </ItemGroup>
 </Project>
