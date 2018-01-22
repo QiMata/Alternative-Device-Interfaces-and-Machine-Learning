@@ -7,7 +7,6 @@ using Plugin.AudioRecorder;
 using QiMata.AlternativeInterfaces.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-//using Plugin.MediaManager;
 
 namespace QiMata.AlternativeInterfaces.Views
 {

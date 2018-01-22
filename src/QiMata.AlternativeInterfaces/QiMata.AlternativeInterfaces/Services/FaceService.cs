@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -29,6 +30,14 @@ namespace QiMata.AlternativeInterfaces.Services
             streamContent.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
             var postResponse = await
                 _client.PostAsync($"api/FaceRecognition",streamContent);
+
+            if (postResponse.StatusCode == HttpStatusCode.BadRequest)
+            {
+                return new Person
+                {
+                    Name = "No Person Detected"
+                };
+            }
 
             postResponse.EnsureSuccessStatusCode();
 
